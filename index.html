@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Card – Test</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <article class="card" aria-labelledby="p-name" aria-describedby="p-price p-status">
+      <div class="card__media">
+        <img
+          src="./image/tee.jpg"
+          alt="shirt image"
+        />
+      </div>
+
+      <div class="card__body">
+        <h2 id="p-name" class="card__title">Premium Cotton Tee</h2>
+
+        <div class="row">
+          <span class="price" id="p-price" aria-live="polite">€—</span>
+        </div>
+
+        <div class="row">
+          <label for="variant">Size</label>
+          <select id="variant"></select>
+        </div>
+
+        <p id="p-status" class="status" aria-live="polite"></p>
+
+        <button id="addBtn" class="btn" type="button" aria-disabled="true">
+          Add to cart
+        </button>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
